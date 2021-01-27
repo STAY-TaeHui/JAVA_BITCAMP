@@ -1,0 +1,10 @@
+package day0125;
+
+public class Task_Rock_Scissor_Paper {
+
+    public static void main(String[] args) {
+        // TODO Auto-generated method stub
+
+    }
+
+}

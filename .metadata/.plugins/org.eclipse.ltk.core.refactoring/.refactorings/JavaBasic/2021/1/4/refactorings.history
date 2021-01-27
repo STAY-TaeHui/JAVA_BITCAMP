@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;day0121.SstarPrinter04&apos; to &apos;StarPrinter04&apos;&#x0D;&#x0A;- Original project: &apos;JavaBasic&apos;&#x0D;&#x0A;- Original element: &apos;day0121.SstarPrinter04&apos;&#x0D;&#x0A;- Renamed element: &apos;day0121.StarPrinter04&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;SstarPrinter04&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;day0121{SstarPrinter04.java[SstarPrinter04" matchStrategy="1" name="StarPrinter04" qualified="false" references="true" similarDeclarations="false" stamp="1611205464786" textual="false" version="1.0"/>
+</session>
