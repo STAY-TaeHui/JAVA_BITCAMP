@@ -9,15 +9,18 @@ public class Test1 {
         int min = score[0];
 
         for(int i=0; i<score.length; i++){///////삼항연산자 써봐라 **아
-            if(max<score[i]){
-                max=score[i];
-            }
-            if(min>score[i]){
-                min=score[i];
-            }
+                max=(max<score[i]) ? max=score[i] : max;
+                min= (min>score[i]) ? min = score[i] : min;
+//            if(max<score[i]){
+//                max=score[i];
+//            }
+//            if(min>score[i]){
+//                min=score[i];
+//            }
+
         }
 
-        System.out.printf("max > %d , min > %d\n",max,min);
+        System.out.printf("Mmax > %d , min > %d\n",max,min);
 
 
         //2. 10개의 방의값을 1~10까지 값으로 초기화
@@ -41,13 +44,16 @@ public class Test1 {
         float average = 0f;
         int[] jumsu = {100,55,90,60,78};
 
-        for(int i : jumsu){
-            sum+=i;
+        for(int i=0; i<jumsu.length; i++){
+            sum+=jumsu[i];
+            if(i== jumsu.length-1){
+                average=(float)sum/ jumsu.length;
+            }
         }
-        for(int i : jumsu){
-            average+=i;
-        }
-        average=average/ jumsu.length;
+//        for(int i : jumsu){//for문 하나에 합과 평균 같이 구하기
+//            average+=i;
+//        }
+//        average=average/ jumsu.length;
 
         System.out.println("1. 총 과목의 수 : "+jumsu.length);
         System.out.println("2. 과목의 합 : " + sum);
