@@ -13,7 +13,7 @@ public class Car2 {
     private int speed;
 
     public int getSpeed() {
-        return speed;
+        return this.speed;
     }
 
     public void setSpeed(int speed) {
@@ -35,8 +35,9 @@ public class Car2 {
         this.speed +=10;
     }
     public void downSpeed(){
-        this.speed -=10;
-        if(this.speed<0){
+        if(this.speed<0)
+            this.speed -=10;
+        else{
             this.speed=0;
         }
     }

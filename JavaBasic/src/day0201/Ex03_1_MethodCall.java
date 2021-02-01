@@ -1,5 +1,7 @@
 package day0201;
 
+import kr.or.bit.Car;
+import kr.or.bit.Car2;
 import kr.or.bit.Mouse;
 import kr.or.bit.NoteBook;
 
@@ -56,5 +58,17 @@ public class Ex03_1_MethodCall {
         for(NoteBook i: notebookArr){
             i.noteBookInfo();
         }
+
+        Car2 car = new Car2();
+        car.upSpeed();
+        car.upSpeed();
+
+        System.out.println(car.getSpeed());
+
+        car.downSpeed();
+        car.downSpeed();
+        car.downSpeed();
+        car.downSpeed();
+        System.out.println(car.getSpeed());
     }
 }
