@@ -6,6 +6,7 @@ public class AirPlane2 {
     private static int airtotalcount;
 
     public void makeAirPlane(int num, String name){
+
         this.airnum = num;
         this.airname = name;
         airtotalcount++;
