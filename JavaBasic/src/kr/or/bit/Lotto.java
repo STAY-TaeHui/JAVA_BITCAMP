@@ -1,5 +1,7 @@
 package kr.or.bit;
+/*
 
+ */
 import java.util.Random;
 import java.util.Scanner;
 
@@ -39,10 +41,10 @@ public class Lotto {      //생성자1 / 메뉴 / numbers setter / 중복제거 
 //                }
 //            }
 //            this.numbers[i] = tmp_num;
-
-        dupli_Verification();
-        lotto_Sort();
-        lotto_print();
+                                            // REVIEW!!!
+        dupli_Verification();               // 논리적인 제어가 필요하다. 만약 로또배열이 생성되면 중복제거 함수를 호출하고
+        lotto_Sort();                       // 중복제거 함수가 정상적으로 작동했다면 정렬을 하고 ->
+        lotto_print();                      // 정렬을 정상적으로 작동했다면 출력을 하게 만들기!!
     }
 
     public void dupli_Verification(){                       //중복제거함수를 호출하면 한번에 쭉 보면서 중복되는지 확인
