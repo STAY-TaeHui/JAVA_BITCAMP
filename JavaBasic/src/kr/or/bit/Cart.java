@@ -5,6 +5,7 @@ package kr.or.bit;
         int price;
         int bonuspoint;
 
+
     Cart(int price){
             this.price = price;
             this.bonuspoint = (int)(price * 0.1);
@@ -41,6 +42,7 @@ package kr.or.bit;
 
     //구매자
  class Buyer1{
+     final int MAX = 10;
         int money=1000;
         int bonuspoint;
         int totalprice;
@@ -48,7 +50,7 @@ package kr.or.bit;
         Cart [] cart;
 
         Buyer1(){
-            cart = new Cart[10];
+            cart = new Cart[MAX];
         }
 
         void summary(){
