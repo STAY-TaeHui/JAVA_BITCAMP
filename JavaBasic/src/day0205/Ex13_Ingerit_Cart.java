@@ -74,6 +74,10 @@ class Buyer1{
             System.out.println("잔액 : " + this.money);
             return ;
         }
+        else if(count>=10){
+            System.out.println("장바구니의 빈자리가 없습니다... 그만사세요...");
+            return ;
+        }
         else{
             this.money -= n.price;
             this.bonuspoint += n.bonuspoint;
@@ -100,8 +104,13 @@ public class Ex13_Ingerit_Cart {
         buyer1.Buy(notebook);
         buyer1.Buy(notebook);
         buyer1.Buy(audio);
+        buyer1.Buy(audio);
+        buyer1.Buy(audio);
+        buyer1.Buy(audio);
+        buyer1.Buy(audio);
+        buyer1.Buy(audio);
 
-//        buyer1.Buy(kttv);
+        buyer1.Buy(kttv);
 
         buyer1.summary();
 

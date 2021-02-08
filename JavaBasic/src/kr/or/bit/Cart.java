@@ -61,6 +61,10 @@ package kr.or.bit;
             System.out.println("총 구매 금액은 : " + totalprice);
         }
         void Buy_in_Cart(Cart n){
+             if(count>=10){
+                System.out.println("장바구니의 빈자리가 없습니다... 그만사세요...");
+                return ;
+            }
             cart[count] = n;
             this.totalprice += n.price;
         }
@@ -70,8 +74,8 @@ package kr.or.bit;
             if(this.money < n.price){
                 System.out.println("고객님 잔액이 부족합니다....");
                 System.out.println("잔액 : " + this.money);
-                return ;
             }
+
             else{
                 this.money -= n.price;
                 this.bonuspoint += n.bonuspoint;
