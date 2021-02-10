@@ -17,7 +17,7 @@ package day0209;
 
 3. 추상클래스는 (완성 + 미완성)
 
-4. 인터페이스는 ( 상수를 제외한 나머지는 미완성(추상)자원
+4. *** 인터페이스는  상수를 제외한 나머지는 미완성(추상)자원 ***
 
 +++ 개발자 (초급) +++
 1. 인터페이스를 [다형성]입장으로 보자. >> 얘는 무조건 부모모
@@ -25,6 +25,7 @@ package day0209;
 3. JAVA API 여러 분이 사용할만한 수많은 인터페이스가 있다.
 4. 인터페이스는 관용적 표현 : (~able) : ~ 할수 있는
 5. 객체간 연결 고리( 객체간 소통 ) >> 다형성 >> 부모
+6. TV interface --> TV는 어떤기능을 가지고 있을까?? >> 그냥 어떤 기능이 있을지 선언만 해준다.구현은 밑에서..
 
 인터페이스는 >> 설계표준이고 >> 구현을 강제한다. >> 재정의를 통해서...
 
@@ -51,6 +52,11 @@ interface Humanable{
 
     String print();
     void message(String str);
+
+    public default void test(){
+        System.out.println("default test");
+    }
+
 }
 interface Iable{
     int AGE = 10;

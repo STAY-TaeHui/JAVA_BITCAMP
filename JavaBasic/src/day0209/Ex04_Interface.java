@@ -3,6 +3,7 @@ package day0209;
 import java.util.Scanner;
 
 interface Irepairable{}
+
 class Unit2{
     int hitpoint;
     final int MAX_HP;
