@@ -9,6 +9,7 @@ abstract class Unit {
     void stop() {
         System.out.println("STOP");
     }
+
     abstract void move(int x, int y);
 }
 //
@@ -18,11 +19,15 @@ class Tank extends Unit{
     void move(int x, int y) {
         this.x = x;
         this.y = y;
+        System.out.println("TESTTANK");
 
     }
     void siegemode(){
         System.out.println("Siege Mode~~~");
     }
+
+}
+class Test2 extends Tank{
 
 }
 class Marine extends Unit{
@@ -61,6 +66,7 @@ public class Ex02_abstract_class {
         t.move(500,200);
         t.stop();
         t.siegemode();
+
 
         Marine m = new Marine();
         m.move(500,200);

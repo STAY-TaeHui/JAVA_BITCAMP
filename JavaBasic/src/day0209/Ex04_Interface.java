@@ -109,6 +109,8 @@ public class Ex04_Interface {
         Marine2 marine = new Marine2();
         Scv scv = new Scv();
 
+        System.out.println(scv);
+
         //전투
         tank.hitpoint -= 20;
         System.out.println("탱크 : " + tank.hitpoint);
